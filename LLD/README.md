@@ -9,4 +9,4 @@ About:
   doing this will lead us a way to make those 2D array values in right index, And that's All.
   Only the Last value of the board is gonna be zero, Meanwhile other numbers are fixed at it's right index, Then we WON.
 
-  ![alt text](http://url/to/img.png)
+  ![alt text](Screenshot 2024-10-16 011923.png)
