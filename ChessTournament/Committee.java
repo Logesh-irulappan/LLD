@@ -58,9 +58,9 @@ public class Committee {
             if (player.isAvailable())
                 continue;
 
-            for (int j = i+1; j < players.length; j++) {
+            for (int j = 0; j < players.length; j++) {
                 Player opponent = players[j];
-                if (opponent.isAvailable() || opponent.containsOpponent(player))
+                if (opponent.isAvailable() || player.getId() == opponent.getId() || opponent.containsOpponent(player))
                     continue;
                 else {
                     Match match = new Match(player, opponent);
@@ -142,7 +142,6 @@ public class Committee {
         for (Player player : players) {
             if (!player.isAvailable()) {
                 System.out.println(player.getName()+" GETS A BYE ");
-                break;
             }
         }
 
